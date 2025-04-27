@@ -35,3 +35,33 @@
     top: 20vh;
     left: 35vh ;}
 
+.sec-custom{
+    /* flex-grow: 1; */
+    width:14vh;
+    height: 5px;
+    margin-left: 10vh;
+    margin-top: -4vh;
+border-bottom: solid 2px #ed502e;
+}
+.icon-custom{
+    color: #ed502e;
+    margin-right: 5px;
+}
+.card-shadw{
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
+}
+.icon-custom2{
+    color: #ed502e;
+    background-color: white;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    width: 54px;
+    height: 54px;
+    font-size: 24px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    z-index: 1
+}
