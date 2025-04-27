@@ -6,3 +6,7 @@
     display: block;
     margin-top: 0;
 }
+/* animation */
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    transition: opacity 1s ease-in-out;
+}
