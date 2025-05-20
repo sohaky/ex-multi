@@ -1,55 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Multi</title>
     <link rel="stylesheet" href="stayl.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-md">
-    <div class="container">
-        <a href="" class="navbar-brand fw-bold fs-4 color-custom" >MULTI</a>
-        <!-- responsiv -->
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmnu" type="button">
+        <div class="container">
+            <a href="" class="navbar-brand fw-bold fs-4 color-custom">MULTI</a>
+            <!-- responsiv -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmnu" type="button">
             <span class="navbar-toggler-icon"></span></button>
-    <div class=" collapse navbar-collapse mt-3" id="navmnu">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a href="" class="nav-link ">Home</a></li>
-            <li class="nav-item"><a href="" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Team</a></li>
-            <!-- dropdown -->
-            <li class="nav-item dropdown dropdown-c"><a href="" class="nav-link btn dropdown-toggle" id="navdrop" data-bs-toggle="dropdown">Dropdown</a>
-            <ul class="dropdown-menu dropdown-menu-c">
-                <li><a href="" class="dropdown-item">dropdown1</a></li>
-                <!-- depdropdown -->
-                <li class="dropdown"><a href="" class="dropdown-item btn dropdown-toggle" id="navdrop" data-bs-toggle="dropdown"> deep dropdown</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="" class="dropdown-item">dropdown1</a></li>
-                        <li><a href="" class="dropdown-item">dropdown2</a></li>
-                        <li><a href="" class="dropdown-item">dropdown3</a></li>
-                        <li><a href="" class="dropdown-item">dropdown4</a></li>
-                    </ul>
-                </li>
-                <!-- f-deepdropdown -->
-                <li><a href="" class="dropdown-item">dropdown2</a></li>
-                <li><a href="" class="dropdown-item">dropdown3</a></li>
-                <li><a href="" class="dropdown-item">dropdown4</a></li>
-            </ul>
-            </li>
-            <li class="nav-item"><a href="" class="nav-link">Content</a></li>
-        </ul>
-        <button class="btn btn-custom px-3 text-light rounded-1 mx-2">Get started</button>
-    </div>
-    </div>
+            <div class=" collapse navbar-collapse mt-3" id="navmnu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link ">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#Services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Team</a></li>
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown dropdown-c"><a href="" class="nav-link btn dropdown-toggle" id="navdrop" data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu dropdown-menu-c">
+                            <li><a href="" class="dropdown-item">dropdown1</a></li>
+                            <!-- deapdropdown -->
+                            <li class="dropdown"><a href="" class="dropdown-item btn dropdown-toggle" id="navdrop" data-bs-toggle="dropdown"> deep dropdown</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="" class="dropdown-item">dropdown1</a></li>
+                                    <li><a href="" class="dropdown-item">dropdown2</a></li>
+                                    <li><a href="" class="dropdown-item">dropdown3</a></li>
+                                    <li><a href="" class="dropdown-item">dropdown4</a></li>
+                                </ul>
+                            </li>
+                            <!-- f-deepdropdown -->
+                            <li><a href="" class="dropdown-item">dropdown2</a></li>
+                            <li><a href="" class="dropdown-item">dropdown3</a></li>
+                            <li><a href="" class="dropdown-item">dropdown4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link">Content</a></li>
+                </ul>
+                <a id="login" href="login.html" class="btn btn-custom px-3 text-light rounded-1 mx-2">login</a>
+            </div>
+        </div>
     </nav>
     <!-- slider -->
-    <section class=" carousel">
+    <section class=" carousel" id="home">
         <div class="carousel slide" data-bs-ride="carousel" id="slider">
             <!-- dots -->
             <div class="carousel-indicators">
@@ -76,19 +78,18 @@
                 </div>
             </div>
             <!-- left right -->
-        <button class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev" type="button">
+            <button class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev" type="button">
             <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next" type="button">
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next" type="button">
             <span class="carousel-control-next-icon"></span>
         </button>
         </div>
         <div class="position-absolute  star  text-center text-light z-3 text-custom">
             <h1 class=" ">At vero eos et accusamus</h1>
-            <p class="">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,<br>
-        omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-        <button class=" btn btn-custom text-light rounded-1">Get  started</button>
-    </div>
+            <p class="">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,<br> omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+            <button class=" btn btn-custom text-light rounded-1">Get  started</button>
+        </div>
     </section>
     <!-- about -->
     <section id="about">
@@ -98,25 +99,23 @@
             <h2 class="fw-bold color-custom mt-3">Learn More About Us</h2>
             <div class="row mt-5">
                 <div class="col">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
-                        <!-- listgrup -->
-                        <div class="row">
-                            <div class="col">
-                                <div class="list-group lead fs-6 mt-3">
-                                    <span><i class="bi bi-check2-circle icon-custom"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                                    <span><i class="bi bi-check2-circle icon-custom"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
-                                    <span><i class="bi bi-check2-circle icon-custom"></i>Ullamco laboris nisi ut aliquip ex ea commodo</span>
-                                </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <!-- listgrup -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="list-group lead fs-6 mt-3">
+                                <span><i class="bi bi-check2-circle icon-custom"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                                <span><i class="bi bi-check2-circle icon-custom"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+                                <span><i class="bi bi-check2-circle icon-custom"></i>Ullamco laboris nisi ut aliquip ex ea commodo</span>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <p >Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                        laborum.</p>
-                        <button class="btn btn-custom rounded-1 px-4 text-light">Read more
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
+                    </p>
+                    <button class="btn btn-custom rounded-1 px-4 text-light">Read more
                             <span><i class="bi bi-arrow-right"></i></span>
                         </button>
                 </div>
@@ -126,38 +125,38 @@
                 <div class="col-3">
                     <span class="card-title"><i class="bi bi-emoji-smile icon-custom2"></i></span>
                     <div class="card card-shadw border-0">
-                    <div class="card-body">
-                        <h3 class="card-title mt-3">232</h3>
-                        <p class="mt-3 lead fs-6">Happy Clients</p>
-                    </div>
+                        <div class="card-body">
+                            <h3 class="card-title mt-3">232</h3>
+                            <p class="mt-3 lead fs-6">Happy Clients</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-3">
                     <span><i class="bi bi-journal-richtext icon-custom2"></i></span>
                     <div class="card card-shadw border-0">
                         <div class="card-body">
-                    <h3 class="card-title mt-3">521</h3>
-                        <p class="mt-3 lead fs-6">Projects</p>
+                            <h3 class="card-title mt-3">521</h3>
+                            <p class="mt-3 lead fs-6">Projects</p>
                         </div>
-                        </div>
+                    </div>
                 </div>
                 <div class="col-3">
                     <span><i class="bi bi-headset icon-custom2"></i></span>
                     <div class="card card-shadw border-0">
                         <div class="card-body">
-                    <h3 class="card-title mt-3">1463</h3>
-                        <p class="mt-3 lead fs-6">Hours Of Support</p>
+                            <h3 class="card-title mt-3">1463</h3>
+                            <p class="mt-3 lead fs-6">Hours Of Support</p>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="col-3">
                     <span><i class="bi bi-people icon-custom2"></i></span>
                     <div class="card card-shadw border-0">
                         <div class="card-body">
-                    <h3 class="card-title mt-3">15</h3>
-                        <p class="mt-3 lead fs-6">Hard Workers</p>
+                            <h3 class="card-title mt-3">15</h3>
+                            <p class="mt-3 lead fs-6">Hard Workers</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
             <!-- textcard -->
@@ -193,8 +192,8 @@
                 <div class="col-3">
                     <h5>Staque laboriosam modi</h5>
                     <p>Velit eos error et dolor omnis voluptates nobis tenetur sed enim nihil vero qui suscipit ipsum at magni. Ipsa architecto consequatur aliquam</p>
-                     <!-- chekicon -->
-                     <div class="row">
+                    <!-- chekicon -->
+                    <div class="row">
                         <div class="col">
                             <div class="list-group lead fs-6 mt-3">
                                 <span><i class="bi bi-check2 icon-custom"></i>Ullamco laboris nisi ut aliquip</span>
@@ -207,8 +206,8 @@
                 <div class="col-3">
                     <h5>Dignissimos suscipit iste</h5>
                     <p>Molestiae occaecati assumenda quia saepe nobis recusandae at dicta ducimus sequi numquam commodi est in consequatur ea magnam quia itaque</p>
-                     <!-- chekicon -->
-                     <div class="row">
+                    <!-- chekicon -->
+                    <div class="row">
                         <div class="col">
                             <div class="list-group lead fs-6 mt-3">
                                 <span><i class="bi bi-check2 icon-custom"></i>Ullamco laboris nisi ut aliquip</span>
@@ -222,7 +221,7 @@
         </div>
     </section>
     <!-- servises -->
-    <section id="Services">
+    <section id="Services" class="Services">
         <div class="container mt-5">
             <p class="lead">Services</p>
             <span class="d-block sec-custom"></span>
@@ -230,57 +229,58 @@
             <div class="row mt-5 pt-5">
                 <div class="col-4 text-center">
                     <div class="card icon-custom-card rounded-0">
-                    <span class="my-5 fs-4  icon-custom3"><i class="bi bi-activity"></i></span>
-                    <div class="card-title h5"> Nesciunt Mete</div>
-                    <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                    <p></p>
-                </div>
+                        <span class="my-5 fs-4  icon-custom3"><i class="bi bi-activity"></i></span>
+                        <div class="card-title h5"> Nesciunt Mete</div>
+                        <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <p></p>
+                    </div>
                 </div>
                 <div class="col-4 text-center">
                     <div class="card icon-custom-card rounded-0">
-                    <span class="my-5 fs-4 icon-custom3"><i class="bi bi-broadcast"></i></span>
-                    <div class="card-title h5">Eosle Commodi</div>
-                    <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                    <p></p>
-                </div>
+                        <span class="my-5 fs-4 icon-custom3"><i class="bi bi-broadcast"></i></span>
+                        <div class="card-title h5">Eosle Commodi</div>
+                        <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <p></p>
+                    </div>
                 </div>
                 <div class="col-4 text-center ">
                     <div class="card icon-custom-card rounded-0">
-                    <span class="my-5 fs-4  icon-custom3"><i class="bi bi-easel"></i></span>
-                    <div class="card-title h5">Ledo Markt</div>
-                    <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                    <p></p>
-                </div>
+                        <span class="my-5 fs-4  icon-custom3"><i class="bi bi-easel"></i></span>
+                        <div class="card-title h5">Ledo Markt</div>
+                        <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <p></p>
+                    </div>
                 </div>
             </div>
             <div class="row  pt-3">
                 <div class="col-4 text-center">
                     <div class="card icon-custom-card rounded-0">
-                    <span class="my-5 fs-4  icon-custom3"><i class="bi bi-activity"></i></span>
-                    <div class="card-title h5"> Nesciunt Mete</div>
-                    <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                    <p></p>
-                </div>
+                        <span class="my-5 fs-4  icon-custom3"><i class="bi bi-activity"></i></span>
+                        <div class="card-title h5"> Nesciunt Mete</div>
+                        <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <p></p>
+                    </div>
                 </div>
                 <div class="col-4 text-center">
                     <div class="card icon-custom-card rounded-0">
-                    <span class="my-5 fs-4 icon-custom3"><i class="bi bi-broadcast"></i></span>
-                    <div class="card-title h5">Eosle Commodi</div>
-                    <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                    <p></p>
-                </div>
+                        <span class="my-5 fs-4 icon-custom3"><i class="bi bi-broadcast"></i></span>
+                        <div class="card-title h5">Eosle Commodi</div>
+                        <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <p></p>
+                    </div>
                 </div>
                 <div class="col-4 text-center ">
                     <div class="card icon-custom-card rounded-0">
-                    <span class="my-5 fs-4  icon-custom3"><i class="bi bi-easel"></i></span>
-                    <div class="card-title h5">Ledo Markt</div>
-                    <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                    <p></p>
-                </div>
+                        <span class="my-5 fs-4  icon-custom3"><i class="bi bi-easel"></i></span>
+                        <div class="card-title h5">Ledo Markt</div>
+                        <p style="font-size: 10px;">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
