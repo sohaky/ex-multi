@@ -70,47 +70,72 @@
         <input type="text" id="input" class="form-control mb-3" disabled>
 
         <div class="row g-2">
-            <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">C</button></div>
-            <div class="col-3"><button class="btn btn-orange w-100" onclick="append('/')">÷</button></div>
-            <div class="col-3"><button class="btn btn-orange w-100" onclick="append('*')">×</button></div>
-            <div class="col-3"><button class="btn btn-danger w-100" onclick="del()">⌫</button></div>
 
             <div class="col-3"><button class="btn btn-orange w-100" onclick="append('7')">7</button></div>
             <div class="col-3"><button class="btn btn-orange w-100" onclick="append('8')">8</button></div>
             <div class="col-3"><button class="btn btn-orange w-100" onclick="append('9')">9</button></div>
-            <div class="col-3"><button class="btn btn-success w-100" onclick="append('-')">−</button></div>
+            <div class="col-3"><button class="btn btn-success w-100" onclick="op('-')">−</button></div>
 
             <div class="col-3"><button class="btn btn-orange w-100" onclick="append('4')">4</button></div>
             <div class="col-3"><button class="btn btn-orange w-100" onclick="append('5')">5</button></div>
             <div class="col-3"><button class="btn btn-orange w-100" onclick="append('6')">6</button></div>
-            <div class="col-3"><button class="btn btn-success w-100" onclick="append('+')">+</button></div>
+            <div class="col-3"><button class="btn btn-success w-100" onclick="op('+')">+</button></div>
 
             <div class="col-3"><button class="btn btn-orange w-100" onclick="append('1')">1</button></div>
             <div class="col-3"><button class="btn btn-orange w-100" onclick="append('2')">2</button></div>
             <div class="col-3"><button class="btn btn-orange w-100" onclick="append('3')">3</button></div>
-            <div class="col-3"><button class="btn btn-success w-100" onclick="calculate()">=</button></div>
+            <div class="col-3"><button class="btn btn-success w-100" onclick="op('/')">/</button></div>
 
             <div class="col-6"><button class="btn btn-orange w-100" onclick="append('0')">0</button></div>
-            <div class="col-6"><button class="btn btn-orange w-100" onclick="append('.')">.</button></div>
+            <div class="col-6"><button class="btn btn-orange w-100" onclick="appendDecimal('.')">.</button></div>
+            <div class="col-6"><button class="btn btn-orange w-100" onclick="op('*')">*</button></div>
+            <div class="col-6"><button class="btn btn-orange w-100" onclick="calculate()">=</button></div>
         </div>
     </div>
     <script>
         let input = document.getElementById('input');
+        let cureninput = ''
+        let lastchar = ''
 
         function append(num) {
-            input.value += input
+            if (cureninput === '0' && num != '.') return
+            cureninput += num
+            lastchar = num
+            input.value = cureninput
         }
 
-        function celear() {
-            input.value = ''
+        function op(po) {
+            if (cureninput === '') return
+            const last = cureninput.slice(-1)
+            if ('/=*+'.includes(last)) return;
+            cureninput += po
+            lastchar = po
+            input.value = cureninput
         }
 
-        function del() {
-            input.value = input.value.slice(0, -1)
+        function appendDecimal(dot) {
+            const parts = cureninput.split(/[\+\-\*\/]/);
+            const lastPart = parts[parts.length - 1];
+            if (lastPart.includes('.')) return;
+
+            if (lastchar === '' || "+-*/".includes(lastchar)) {
+                cureninput += '0';
+            }
+
+            cureninput += dot;
+            lastchar = dot;
+            input.value = cureninput;
         }
 
-        function op() {
-            input.value = eval(input.value)
+        function calculate() {
+            try {
+                let result = eval(cureninput);
+                input.value = result;
+                cureninput = result.toString();
+            } catch {
+                input.value = "خطا";
+                cureninput = '';
+            }
         }
     </script>
 </body>
