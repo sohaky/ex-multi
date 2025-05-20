@@ -122,7 +122,7 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
+    <form onsubmit="return login()">
         <h3>Login Here</h3>
 
         <label for="username">Username</label>
@@ -135,18 +135,24 @@
     </form>
     <script>
         function login() {
-            let user = document.getElementById('username');
-            let pass = document.getElementById('password');
-            let error = document.getElementById('error');
+            let user = document.getElementById('username').value;
+            let pass = document.getElementById('password').value;
+
+
+
+
             if (user === 'soha' && pass === '1234') {
                 window.location.href = './admin.html'
             } else if (user === 'user' && pass === '1234') {
                 window.location.href = './user.html'
-            } else if (user == '' || pass == '' || pass.lenght < 4) {
+            } else if (user == '' || pass == '') {
                 alert('please coplat the form')
+            } else if (user != '' && pass.length < 4) {
+                alert('nnnnnn')
             } else {
-                error.innerText = 'somthing was wrong'
-            }
+                alert('somthing was wrong')
+            };
+        }
     </script>
 </body>
 
